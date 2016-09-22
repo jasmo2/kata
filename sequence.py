@@ -3,4 +3,5 @@ class Sequence:
         if seq == "":
             return [0]
         else:
-            return [1]
+            seq_len = len(seq.split(','))
+            return [seq_len]
