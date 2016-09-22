@@ -23,5 +23,6 @@ class TestSequence(TestCase):
 
     def test_average(self):
         self.assertEqual([0,0,0,0], Sequence().average_el(""), "Empty Sequence average Elements")
+        self.assertEqual([1,1,1,1], Sequence().average_el("1"), "1 Sequence average Elements")
 
 
