@@ -12,3 +12,4 @@ class TestSequence(TestCase):
  def test_min_element(self):
      self.assertEqual([0,0], Sequence().min_el(""), "Empty Sequence min Elements")
      self.assertEqual([1,1], Sequence().min_el("1"), "1 number Sequence min Elements")
+     self.assertEqual([2,1], Sequence().min_el("1,2"), "2 number Sequence min Elements")
