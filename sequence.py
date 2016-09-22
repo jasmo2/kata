@@ -1,3 +1,3 @@
 class Sequence:
-    def sequence(self):
-        pass
+    def sequence(self, seq):
+        return [0]
