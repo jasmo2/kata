@@ -24,3 +24,7 @@ class Sequence:
             max_num = int(max(seq.split(',')))
             arr.extend([max_num])
             return arr
+
+    def average_el(self,seq):
+        if seq == "":
+            return [0, 0, 0, 0]
