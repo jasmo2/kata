@@ -12,4 +12,6 @@ class Sequence:
             return [0, 0]
         else:
             seq_len = len(seq.split(','))
-            return [seq_len, 1]
+            arr = [seq_len]
+            arr.extend(self.sequence(seq))
+            return arr
