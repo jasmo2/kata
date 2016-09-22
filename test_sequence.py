@@ -25,5 +25,6 @@ class TestSequence(TestCase):
         self.assertEqual([0,0,0,0], Sequence().average_el(""), "Empty Sequence average Elements")
         self.assertEqual([1,1,1,1], Sequence().average_el("1"), "1 Sequence average Elements")
         self.assertEqual([2,1,8,4.5], Sequence().average_el("1,8"), "2 Sequence average Elements")
+        self.assertNotEqual([6,1,4,2], Sequence().average_el("1,1,1,2,3,4"), "N Sequence average Elements")
 
 
