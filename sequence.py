@@ -23,4 +23,4 @@ class Sequence:
             arr = self.min_el(seq)
             max_num = int(max(seq.split(',')))
             arr.extend([max_num])
-            return max_num
+            return arr
