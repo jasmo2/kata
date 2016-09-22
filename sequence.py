@@ -19,4 +19,8 @@ class Sequence:
     def max_el(self,seq):
         if seq == "":
             return [0, 0, 0]
-
+        else:
+            arr = self.sequence(seq)
+            min_num = int(max(seq.split(',')))
+            arr.extend([min_num])
+            return arr
