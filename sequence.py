@@ -4,4 +4,4 @@ class Sequence:
             return [0]
         else:
             seq_len = len(seq.split(','))
-            return [seq_len-1]
+            return [seq_len]
