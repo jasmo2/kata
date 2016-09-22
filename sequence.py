@@ -15,3 +15,8 @@ class Sequence:
             min_num = int(min(seq.split(',')))
             arr.extend([min_num])
             return arr
+
+    def max_el(self,seq):
+        if seq == "":
+            return [0, 0, 0]
+
