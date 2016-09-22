@@ -7,4 +7,5 @@ class Sequence:
             return [seq_len]
 
     def min_el(self,seq):
-        pass
+        if seq == "":
+            return [0, 0]
