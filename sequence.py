@@ -28,3 +28,9 @@ class Sequence:
     def average_el(self,seq):
         if seq == "":
             return [0, 0, 0, 0]
+        else:
+            arr = self.max_el(seq)
+            seq_arr = list(map(int,seq.split(',')))
+            avg = sum(seq_arr)/ len(seq_arr)
+            arr.extend([avg])
+            return arr
