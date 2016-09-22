@@ -1,3 +1,6 @@
 class Sequence:
     def sequence(self, seq):
-        return [0]
+        if seq == "":
+            return [0]
+        else:
+            return [1]
