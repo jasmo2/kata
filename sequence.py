@@ -11,7 +11,7 @@ class Sequence:
         if seq == "":
             return [0, 0]
         else:
-            seq_len = len(seq.split(','))
-            arr = [seq_len]
-            arr.extend(self.sequence(seq))
+            arr = self.sequence(seq)
+            min_num = int(min(seq.split(',')))
+            arr.extend([min_num])
             return arr
