@@ -18,4 +18,5 @@ class TestSequence(TestCase):
  def test_max_element(self):
      self.assertEqual([0,0,0], Sequence().max_el(""), "Empty Sequence max Elements")
      self.assertEqual([1,1,1], Sequence().max_el("1"), "1 Sequence max Elements")
+     self.assertEqual([2,1,2], Sequence().max_el("1,2"), "2 Sequence max Elements")
 
